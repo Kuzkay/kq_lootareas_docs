@@ -26,7 +26,7 @@ As mentioned example the `CreateArea` takes an "AreaKey" as its first parameter.
 This will be the key you will need to use to delete or update the area in the future. 
 Try keeping this unique as there can be only one area with the same key.
 Creating an area with a key which already exists will overwrite it. (Old area will be deleted)
-###Area data
+### Area data
 Area data is everything the script needs to create a working loot area. All possible parameters are listed below.
 ___
 - **name** Name of the loot area (visible in the blips)
