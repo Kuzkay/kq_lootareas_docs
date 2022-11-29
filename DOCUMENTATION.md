@@ -1,6 +1,6 @@
-#KuzQuality Loot Areas
+# KuzQuality Loot Areas
 ___
-###General information
+### General information
 `kq_lootareas` is a script which enables simple creation of areas in which loot can be spawned.
 Spawned loot is synchronized between players in a custom, reliable and very performant manner.
 Before mentioned loot can be picked up by players.
@@ -8,20 +8,20 @@ Before mentioned loot can be picked up by players.
 
 ___
 
-##Creating loot areas
+## Creating loot areas
 
 To create a new area, use the export functions provided with this resource.
 In this case the function you'll want to call is called `CreateArea`
 
 ***CreateArea(areaKey, areaData)***
 
-###Example
+### Example
 ```lua
 -- in this example case 'areaData' would be filled with all the data of the area you wish to create
 exports['kq_lootareas']:CreateArea('my_area_key', areaData)
 ```
 
-###Area key
+### Area key
 As mentioned example the `CreateArea` takes an "AreaKey" as its first parameter.
 This will be the key you will need to use to delete or update the area in the future. 
 Try keeping this unique as there can be only one area with the same key.
@@ -80,7 +80,7 @@ ___
     - **takeItem** Whether or not the item should be taken/consumed after collecting the loot
 ___
 
-###Example
+### Example
 ```lua
 local newAreaExample = {
     name = 'Poppy field',
@@ -149,7 +149,7 @@ local newAreaExample = {
 exports['kq_lootareas']:CreateArea('poppy_field', newAreaExample)
 ```
 
-###Extra information
+### Extra information
 If you wish to create a loot area with items that will never respawn simply set the time to a value over 24 hours (86400 or higher).
 By doing that the script will not add the items to the respawn pool slightly cutting the script resource usage.
 
@@ -157,14 +157,14 @@ To move an area you will need to delete it and create a new area at the new loca
 
 If you wish to have multiple different items which are bound to a specific 3d model you'll need to create multiple loot areas.
 ___
-##Deleting loot areas
+## Deleting loot areas
 To delete a loot area use the `DeleteArea` function. This function takes just one argument being the area key.
 
-###Example
+### Example
 ```lua
 exports['kq_lootareas']:DeleteArea('poppy_field')
 ```
 
-###Feature requests
+### Feature requests
 If you're working on a script which implements `kq_lootareas` and you'd want something to be added feel free
-to create a feature request on our [Discord](https://discord.gg/fZsyam7Rvz) in the ***#kq_lootareas_requests*** channel 
+to create a feature request on our [Discord](https://discord.gg/fZsyam7Rvz) in the ***#suggestions*** channel 
